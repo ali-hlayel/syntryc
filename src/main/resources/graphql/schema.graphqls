@@ -1,0 +1,14 @@
+### DATA TYPES
+### QUERIES
+type Query {
+}
+
+### INPUT TYPES
+input PageInput {
+    page: Int
+    pageSize: Int
+}
+
+schema {
+    query: Query,
+}
