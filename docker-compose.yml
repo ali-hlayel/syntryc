@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  app:
+    container_name: sentryc-service
+    image: sentryc-service-app
+    build: ./
+    ports:
+      - "8080:8080"
+    depends_on:
+      - elasticsearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.1
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"

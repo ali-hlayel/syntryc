@@ -6,7 +6,6 @@ import de.sentryc.repository.ProducerRepository;
 import de.sentryc.repository.SellerInfoRepository;
 import de.sentryc.repository.SellerRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -35,11 +34,11 @@ public class DataInitializationService {
             producerRepository.save(producer);
         }
 
-        // Generate and save 1000 marketplace entries (countries)
+        // Generate and save 10 marketplace entries (countries)
         for (int i = 0; i < 10; i++) {
             Marketplace marketplace = new Marketplace();
-            marketplace.setDescription("Description" + i);
-            marketplace.setId(String.valueOf(i));
+            marketplace.setDescription("Description");
+            marketplace.setId("MarkerPlaceId_" + i);
             marketplaceRepository.save(marketplace);
         }
 
