@@ -23,5 +23,6 @@ For a more comprehensive understanding, additional details about the specific re
 This will ensure that Elasticsearch is up and running on http://localhost:9200.
 After Elasticsearch is successfully launched, run the project using your preferred method.
 Once the project is running, navigate to the GraphQL endpoint at http://localhost:8080/graphql.
+once the App started it will add 1000 Seller and Seller dumy data to the DB 
 That's it! You can now interact with the GraphQL API to perform queries and explore the functionality of the project.
 
