@@ -2,7 +2,6 @@ package de.sentryc.service.dto;
 
 import de.sentryc.domain.Producer;
 import de.sentryc.domain.Seller;
-import de.sentryc.graphql.ouput.ProducerSellerStateDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

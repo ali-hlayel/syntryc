@@ -1,5 +1,5 @@
 extend type Query{
-sellers(filter: SellerFilter, page: PageInput!, sortBy: SellerSortBy): SellerPageableResponse!
+getSellers(filter: SellerFilter, page: PageInput!, sortBy: SellerSortBy): SellerPageableResponse!
 }
 
 input SellerFilter {
@@ -19,7 +19,7 @@ MARKETPLACE_ID_DESC,
 
 type SellerPageableResponse {
 meta: PageMeta!
-data: [Seller!]!
+data: [Seller!]
 }
 type PageMeta {
     totalPages: Int

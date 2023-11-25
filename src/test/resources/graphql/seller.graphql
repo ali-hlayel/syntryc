@@ -1,0 +1,17 @@
+query {
+    sellers: getSellers(filter: {marketplaceIds: ["1"], searchByName: "searchName", producerIds: ["1"]}, page: {page: 0, pageSize: 1},sortBy: MARKETPLACE_ID_ASC ) {
+        meta {
+            totalPages
+            totalItems
+        }
+        data {
+            sellerName
+            producerSellerStates {
+                sellerState
+                sellerId
+            }
+            externalId
+            marketplaceId
+        }
+    }
+}
