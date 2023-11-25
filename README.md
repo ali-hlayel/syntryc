@@ -26,3 +26,5 @@ Once the project is running, navigate to the GraphQL endpoint at http://localhos
 once the App started it will add 1000 Seller and Seller dumy data to the DB 
 That's it! You can now interact with the GraphQL API to perform queries and explore the functionality of the project.
 
+## Tests
+As you see I added An integration tests to the seller service and also I tested the grapQl endpoint
